@@ -27,7 +27,7 @@ SECRET_KEY = config('DJANGO_SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG')
 
-ALLOWED_HOSTS = ['hng-stage-5-gyzs.vercel.app','hng-stage-5-71phcy1y3-timmyades3.vercel.app','hng-stage-5-ggdtohin8-timmyades3.vercel.app','localhost']
+ALLOWED_HOSTS = ['hng-stage-5-gyzs.vercel.app','hng-stage-5-71phcy1y3-timmyades3.vercel.app','hng-stage-5-ggdtohin8-timmyades3.vercel.app','hng-stage-5.onrender.com','localhost']
 
 
 # Application definition
