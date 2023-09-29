@@ -2,11 +2,12 @@ asgiref==3.7.2
 attrs==23.1.0
 boto3==1.28.57
 botocore==1.31.57
-Django==4.2.5
+Django==3.2.21
 django-storages==1.14
 djangorestframework==3.14.0
 drf-spectacular==0.26.5
 drf-yasg==1.21.7
+gunicorn==21.2.0
 inflection==0.5.1
 jmespath==1.0.1
 jsonschema==4.19.1
@@ -25,3 +26,4 @@ sqlparse==0.4.4
 tzdata==2023.3
 uritemplate==4.1.1
 urllib3==1.26.16
+whitenoise==6.5.0
