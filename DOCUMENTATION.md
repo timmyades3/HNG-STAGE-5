@@ -12,7 +12,7 @@ Follow these steps to set up and run the Django app locally after cloning it fro
 Clone the GitHub repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/timmyades3/HNG_TASK_1
+https://github.com/timmyades3/HNG-STAGE-5
 ```
 
 ### 2. Create a Virtual Environment
@@ -77,6 +77,49 @@ python manage.py createsuperuser
 ### 8. Run the Development Server
 
 Start the Django development server:
+
+## Endpoints
+
+- Create `/api`
+- Read `/api`
+- Update `/api/personid` OR `/api/personname`
+- Create `/api/personid` OR `/api/personname`
+
+## Usage
+
+The API is designed to manage persons. You can create, retrieve, update, and delete persons using the provided endpoints.
+
+## Sample Requests and Responses
+
+### 1. Create a Person
+
+**Request:**
+
+```http
+POST /api
+Content-Type: application/json
+
+{
+  "name": "John Doe"
+}
+```
+
+**Response (Success):**
+
+```json  
+  "data": {
+    "_id": "UniqueID",
+    "name": "John Doe"
+  }
+```
+
+**Response (Error - Validation Failed):**
+
+```json
+{
+    "detail": "JSON parse error - Expecting value: line 1 column 9 (char 8)"
+}
+```
 
 ```bash
 python manage.py runserver
