@@ -80,27 +80,25 @@ Start the Django development server:
 
 ## Endpoints
 
-- Create `/api`
-- Read `/api`
-- Update `/api/personid` OR `/api/personname`
-- Create `/api/personid` OR `/api/personname`
+- upload video `endpoint/`
+
 
 ## Usage
 
-The API is designed to manage persons. You can create, retrieve, update, and delete persons using the provided endpoints.
+The API is designed to accept and transcribe video using the provided endpoint.
 
 ## Sample Requests and Responses
 
-### 1. Create a Person
+### 1. upload video
 
 **Request:**
 
 ```http
-POST /api
+POST endpoint/
 Content-Type: application/json
 
 {
-  "name": "John Doe"
+  "video": "John Doe"
 }
 ```
 
@@ -108,18 +106,18 @@ Content-Type: application/json
 
 ```json  
   "data": {
-    "_id": "UniqueID",
-    "name": "John Doe"
+       "video":"https://stage5-videoapi.s3.amazonaws.com/videos/WIN_20231002_18_58_43_Pro.mp4?AWSAccessKeyId=AKIA2ZQHIZ3XOPFGMYQB&Signature=4zwkv5WlQjDAlm28ThUUhyCO3uo%3D&Expires=1696273622"
+       "transcription":"the video transcription"
   }
 ```
 
-**Response (Error - Validation Failed):**
+<!--**Response (Error - Validation Failed):**
 
 ```json
 {
-    "detail": "JSON parse error - Expecting value: line 1 column 9 (char 8)"
+    
 }
-```
+```-->
 
 ```bash
 python manage.py runserver
