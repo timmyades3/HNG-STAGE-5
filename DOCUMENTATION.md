@@ -1,7 +1,7 @@
 # HNG-STAGE-5
 ## View live
 
-[View live](https://hng-task-1-2xlb.onrender.com/api/)
+[View live](https://hng-stage-5.onrender.com)
 
 ## Local Development Setup
 
