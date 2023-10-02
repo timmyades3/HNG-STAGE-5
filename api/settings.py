@@ -27,7 +27,7 @@ SECRET_KEY = config('DJANGO_SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG')
 
-ALLOWED_HOSTS = ['hng-stage-5-gyzs.vercel.app','hng-stage-5-71phcy1y3-timmyades3.vercel.app','hng-stage-5-ggdtohin8-timmyades3.vercel.app','hng-stage-5.onrender.com','localhost']
+ALLOWED_HOSTS = ['hng-stage-5-gyzs.vercel.app','hng-stage-5-71phcy1y3-timmyades3.vercel.app','hng-stage-5-ggdtohin8-timmyades3.vercel.app','hng-stage-5.onrender.com','localhost','127.0.0.1']
 
 
 # Application definition
@@ -152,3 +152,9 @@ AWS_S3_FILE_OVERWRITE = False
 AWS_DEFAULT_ACL =  None
 AWS_S3_VERITY = True
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
+
+# CELERY_BROKER_URL = 'redis://localhost:8000/0'  # Use your preferred message broker here
+# # CELERY_RESULT_BACKEND = 'django-db'  # Use 'redis://' for better performance
+# CELERY_ACCEPTED_CONTENT = ['json']
+# CELERY_TASK_SERIALIZER = 'json'
