@@ -5,11 +5,11 @@ from . import validators
 
 
 class UploadVideoSerializer(serializers.ModelSerializer):
-    video = serializers.FileField(read_only = True)
-    base64_video = serializers.CharField(
-        validators=[validators.validate_base64]
-        )
-    title = serializers.CharField()
+    video = serializers.FileField(validators=[validators.validate_file_is_video])
+    # base64_video = serializers.CharField(
+    #     validators=[validators.validate_base64]
+    #     )
+    # title = serializers.CharField()
     # base_id = serializers.charfield()
     # video_array = serializers.ListField(child=serializers.CharField(use_url=False, write_only = True))
     # video_url = serializers.SerializerMethodField(read_only=True) 
@@ -19,8 +19,8 @@ class UploadVideoSerializer(serializers.ModelSerializer):
         fields = ['video',
                 #   'video_url',
                   # 'video_array',
-                  'title',
-                  'base64_video',
+                #   'title',
+                #   'base64_video',
                   'transcription']
 
     # def get_video_url(self, obj):
