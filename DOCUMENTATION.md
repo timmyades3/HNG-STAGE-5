@@ -12,7 +12,7 @@ Follow these steps to set up and run the Django app locally after cloning it fro
 Clone the GitHub repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/timmyades3/HNG_TASK_1
+https://github.com/timmyades3/HNG-STAGE-5
 ```
 
 ### 2. Create a Virtual Environment
