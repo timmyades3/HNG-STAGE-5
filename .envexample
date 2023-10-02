@@ -1,0 +1,3 @@
+DJANGO_SECRET_KEY = 'django-insecure-mp1v#sm(y_8@i=04^34rge0wp4^e2*@m^l_878_$ltyifh$)!r'
+DEBUG = True
+
