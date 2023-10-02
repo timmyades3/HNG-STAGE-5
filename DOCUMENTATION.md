@@ -77,6 +77,11 @@ python manage.py createsuperuser
 ### 8. Run the Development Server
 
 Start the Django development server:
+```bash
+python manage.py runserver
+```
+
+The server should be accessible at `http://localhost:8000/` in your web browser.
 
 ## Endpoints
 
@@ -85,42 +90,10 @@ Start the Django development server:
 
 ## Usage
 
-The API is designed to accept and transcribe video using the provided endpoint.
+To use this API effectively, follow these steps:
 
-## Sample Requests and Responses
+1. Start the server.
+2. Use Postman or any apk you prefer to interact with the API endpoints.
 
-### 1. upload video
 
-**Request:**
 
-```http
-POST endpoint/
-Content-Type: application/json
-
-{
-  "video": "John Doe"
-}
-```
-
-**Response (Success):**
-
-```json  
-  "data": {
-       "video":"https://stage5-videoapi.s3.amazonaws.com/videos/WIN_20231002_18_58_43_Pro.mp4?AWSAccessKeyId=AKIA2ZQHIZ3XOPFGMYQB&Signature=4zwkv5WlQjDAlm28ThUUhyCO3uo%3D&Expires=1696273622"
-       "transcription":"the video transcription"
-  }
-```
-
-<!--**Response (Error - Validation Failed):**
-
-```json
-{
-    
-}
-```-->
-
-```bash
-python manage.py runserver
-```
-
-The server should be accessible at `http://localhost:8000/` in your web browser.
