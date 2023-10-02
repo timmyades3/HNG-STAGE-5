@@ -7,7 +7,7 @@ from rest_framework.views import APIView
 from rest_framework import generics
 from rest_framework.response import Response
 from rest_framework import status
-from .tasks import transcribe_video
+# from .tasks import transcribe_video
 from .models import Video
 from .serializers import UploadVideoSerializer
 from tempfile import NamedTemporaryFile, TemporaryFile
