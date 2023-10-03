@@ -95,5 +95,6 @@ To use this API effectively, follow these steps:
 1. Start the server.
 2. Use Postman or any apk you prefer to interact with the API endpoints.
 
-
+## link to my endpoint video
+https://drive.google.com/file/d/1msSDGcsTbEQoTQdopxLPScSrbLw40RcZ/view?usp=sharing
 
