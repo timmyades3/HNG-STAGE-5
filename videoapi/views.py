@@ -63,7 +63,7 @@ class UploadVideo(generics.CreateAPIView):
             with NamedTemporaryFile(delete=False) as temp_file:
                 for chunk in video.chunks():
                     temp_file.write(chunk)
-            model =whisper.load_model("tiny", device="cpu")
+            model =whisper.load_model("base.en")
             option = whisper.DecodingOptions(fp16=False)
             result = model.transcribe(temp_file.name)
             final_result = f'{result["text"]}'
