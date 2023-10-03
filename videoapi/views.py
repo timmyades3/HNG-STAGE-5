@@ -90,14 +90,11 @@ class UploadVideo(generics.CreateAPIView):
 
             # Call the async function to transcribe audio
             transcription_result = asyncio.run(self.transcribe_audio(unique_name))
-
+            serializer.save(transcription = transcription_result)
             # Return the S3 URL for the video and the transcription in the response
             os.remove(unique_name)
 
-            return Response({
-                "video_url": presigned_url,
-                "transcription": transcription_result
-            }, status=status.HTTP_200_OK)
+            return Response(serializer.data, status=status.HTTP_200_OK)
 
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 # class UploadVideo(generics.CreateAPIView):
