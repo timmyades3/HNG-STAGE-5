@@ -22,9 +22,9 @@ import uuid
 from deepgram import Deepgram
 from decouple import config
 import mimetypes
-from moviepy.editor import VideoFileClip
+
 import asyncio
-import speech_recognition as sr
+
 import boto3
 
 
