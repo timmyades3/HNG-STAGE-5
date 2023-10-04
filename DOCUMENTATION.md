@@ -86,6 +86,8 @@ The server should be accessible at `http://localhost:8000/` in your web browser.
 ## Endpoints
 
 - upload video `endpoint/`
+- get video url `api/video/pk/`
+- get transcription `api/transcription/pk/`
 
 
 ## Usage
