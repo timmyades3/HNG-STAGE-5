@@ -94,9 +94,6 @@ To use this API effectively, follow these steps:
 
 1. Start the server.
 2. Use Postman or any apk you prefer to interact with the API endpoints.
-### post request with video chumk
-![Registration Screenshot](https://drive.google.com/file/d/199ULQ_hGbN62CCgsdCvYmIrEpppLAio-/view?usp=sharing)
-
 
 ## link to my endpoint video
 https://drive.google.com/file/d/1E79x1RylUhimPmiYuRjFIIOtI8CcOck7/view?usp=sharing
