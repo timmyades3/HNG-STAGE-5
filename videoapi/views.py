@@ -120,8 +120,12 @@ class UploadVideo(generics.CreateAPIView):
                     "transcription":video.transcription
                 }
                 return Response(response, status=status.HTTP_200_OK)
+            elif title or base64_video:
+                raise serializers.ValidationError("Error: base64_video or title can not be empty'.")
+            else:    
+                raise serializers.ValidationError("Error: Fields cannot be empty'.")   
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-    
+   
 
 @api_view(["GET"])
 def TranscriptionRetrieveApiview(request, pk=None, *args, **kwargs):
